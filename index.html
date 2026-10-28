@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#F7F8FC">
+  <meta name="description" content="我是张弦，一名有10年UX经验的全栈设计师。把设计、开发与AI连接起来，做可以亲手体验的作品。">
+  <meta property="og:title" content="张弦 · 设计与 AI 创作">
+  <meta property="og:description" content="10年UX经验。互动网页、独立产品与创作工具。把想法做成可以体验的作品。">
+  <title>张弦 Xian — 设计与 AI 创作</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%236c5bd1'/%3E%3Cpath d='M18 17L46 47M46 17L18 47' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#work">跳到作品</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#top" aria-label="张弦，回到首页"><span class="brand-symbol" aria-hidden="true">x<span>·</span></span><span>张弦 <span class="wordmark-en">XIAN</span></span></a>
+      <nav aria-label="主导航"><a href="#work">作品</a><a href="#about">关于</a><a href="#contact">联系</a></nav>
+      <button class="header-contact print-action" type="button">保存 PDF <span aria-hidden="true">↗</span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-width" aria-labelledby="hero-title">
+      <div class="hero-heading">
+        <div class="hero-copy">
+          <h1 id="hero-title">张弦<br><span>设计 × 开发 × AI</span></h1>
+          <p class="hero-intro"><strong>10 年 UX 经验</strong>，专注产品设计与 AI 创作。</p>
+          <div class="hero-actions"><a class="button primary" href="#work">查看作品 <span aria-hidden="true">↓</span></a><button class="button quiet print-action" type="button">保存 PDF</button></div>
+        </div>
+      </div>
+      <div class="hero-stage">
+        <div class="stage-images"><img id="stage-day" src="assets/qingming-day.webp" alt="清明上河的白日街市：水磨、河岸与往来的人们" width="1600" height="900" fetchpriority="high"><img id="stage-night" src="assets/qingming-night.webp" alt="同一座宋代街市的夜景，沿河灯火亮起" width="1600" height="900" aria-hidden="true"></div>
+        <div class="stage-top"><span class="stage-tag"><span aria-hidden="true">◉</span> 清明上河</span><button id="scene-switch" class="scene-switch" type="button" aria-pressed="false" aria-label="切换到夜景"><span class="switch-day">日间</span><span class="switch-night">夜景</span><span class="switch-thumb" aria-hidden="true"></span></button></div>
+        <div class="stage-bottom"><a href="https://xianxie6.github.io/qingming-riverside/" target="_blank" rel="noopener noreferrer">在线体验 <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="proof-strip" aria-label="经历与作品反馈">
+        <div class="proof-item"><strong>≈9,200</strong><p>清明上河体验人数</p></div>
+        <div class="proof-item"><strong>98<span>K</span></strong><p>X 上线展示帖浏览</p></div>
+        <div class="proof-note"><p><strong>OpenAI Developers 点赞</strong></p><a href="https://x.com/Xian0063/status/2100047523981496733" target="_blank" rel="noopener noreferrer" aria-label="在 X 查看点赞记录">↗</a></div>
+      </div>
+    </section>
+
+    <section id="work" class="work-section section-width" aria-labelledby="work-title">
+      <div class="section-heading"><h2 id="work-title">代表作品</h2></div>
+      <div class="work-toolbar"><div class="filters" role="group" aria-label="按作品类型筛选"><button class="filter active" data-filter="all" aria-pressed="true">全部</button><button class="filter" data-filter="experience" aria-pressed="false">交互体验</button><button class="filter" data-filter="product" aria-pressed="false">独立产品</button><button class="filter" data-filter="tool" aria-pressed="false">创作工具</button></div><p id="filter-result" class="sr-only" aria-live="polite">7 件作品</p></div>
+      <div id="project-grid" class="project-grid"></div>
+      <div class="more-work"><a class="text-link" href="https://github.com/xianxie6" target="_blank" rel="noopener noreferrer">更多作品 <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section id="about" class="about-section section-width" aria-labelledby="about-title">
+      <div class="about-heading"><h2 id="about-title">关于我</h2></div>
+      <div class="about-grid"><div class="about-portrait"><img src="assets/portrait.webp" alt="张弦的个人形象" width="640" height="640" loading="lazy"></div>
+        <div class="about-copy"><p class="about-lead">产品设计师 · 独立开发者</p><p>山东大学设计系毕业，长期从事 ToB 产品设计。</p><p>做独立 App、交互网页和创作工具。Mochi 从需求、设计、开发到上架，由我独立完成。</p><p>在「弦的 AI 日记」分享作品和制作过程。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section-width" aria-labelledby="contact-title"><h2 id="contact-title">联系我</h2><div class="contact-actions"><a class="button primary" href="https://x.com/Xian0063" target="_blank" rel="noopener noreferrer">X · @Xian0063 <span aria-hidden="true">↗</span></a><a class="button quiet" href="https://github.com/xianxie6" target="_blank" rel="noopener noreferrer">GitHub · xianxie6 <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer section-width"><span>© 2026 张弦</span><span>数据截至 2026.10.28</span></footer>
+
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button class="dialog-close" type="button" aria-label="关闭项目详情">×</button><div id="dialog-body"></div></div></dialog>
+</body>
+</html>
